@@ -1,70 +1,46 @@
 html{
-    width: 100%;
-    height: 100%;
-}
-
-body{
-    background-color: hsl(217, 54%, 11%);
-    font-size: 18px;
     font-family: 'Outfit', sans-serif;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    background-color: hsl(212, 45%, 89%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
-.card{
-    background-color: hsl(216, 50%, 16%);
+main{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-card{
     width: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
     padding: 15px 15px;
-    border-radius: 25px;
-    margin: auto;
-    font-weight: 300;
-    vertical-align: baseline;
+    text-align: center;
+}
+.qr-card img{
+    border-radius: 20px;
+}
+.qr-card h2{
+    color: hsl(218, 44%, 22%);
+}
+.qr-card p{
+    margin-top: -5px ;
+    color:hsl(220, 15%, 55%);
 }
 
-.text{
-    color: hsl(215, 51%, 70%);
-}
-
-.text h1{
-    color: white;
-}
-
-.price_name{
-    display: flex;
-    font-size: 0.5rem;
-    justify-content: space-between;
-}
-
-.item{
-    display: flex;
-    width: 40%;
-    align-items: center;
-}
-.item img{
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.5rem;
-}
-.creator{
-    display: flex;
-    align-items: center;
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: hsl(215, 51%, 70%);
-    border-top: 1px solid hsl(215, 38%, 41%) ;
-    padding: 5px 0px;
-    margin-top: 5px;
-
-}
-
-.creator img{
-    width: 10%;
-    height: 10%;
-    margin-right: 1rem;
+@media screen and (max-width:344px) {
+    .qr-card{
+        width: 80%;
+    }
+    
 }
